@@ -1,0 +1,69 @@
+*{
+    margin:0;/*retira margen por defecto*/
+    padding:0; /*retirar margen interno */
+    --color1:#F2D027;
+    --color2:#403501;
+    --color3:#0D0D0D;
+    --color4:#F2F2F2;
+    --color5:#BF705E;
+}
+body{
+    background-image: url("imagenes/sw_fondo.jpg");
+}
+
+#contenedor{
+    width:90%;
+    margin:20px auto;
+    padding: 10px;
+}
+#cabecera{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding:10px;
+    margin:10px;
+}
+img{
+    max-width: 100%;/*limita la dimension de la imagen con respecto A SU PADRE*/
+    display: block;
+    margin:auto;
+    box-shadow: 15px 10px 20px white;
+}
+.episodio{
+    width:30%;
+    padding: 20px;
+}
+#pie{
+    text-align: center;
+    padding:10px;
+}
+h1,h2,h3{
+    text-align: center;
+    padding: 20px;
+}
+h1,h2,h3{
+    color:var(--color1);
+}
+h2{
+    color: var(--color1);
+}
+p{
+    text-align: justify;
+    color:var(--color4);
+}
+a{
+    color:var(#F2F2F2)
+}
+
+#cabecera,#contenido,#pie{
+    border-width: 3px;
+    border-style: solid;
+    border-color: yellow;
+}
